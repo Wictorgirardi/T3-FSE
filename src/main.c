@@ -126,7 +126,7 @@ void app_main(void)
     {
         ESP_ERROR_CHECK(nvs_flash_erase());
         ret = nvs_flash_init();
-    }
+    }  
     ESP_ERROR_CHECK(ret);
 
     wifiConnectionSemaphore = xSemaphoreCreateBinary();

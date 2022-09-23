@@ -1,5 +1,8 @@
 # Trabalho final - Fundamentos de Sistemas Embarcados(FSE)
 
+Aluno: Wictor bastos Giradi 
+
+Matricula: 170047326
 ## Sobre
 
 O objetivo deste trabalho é criar sensores e atuadores distribuídos baseados nos microcontroladores ESP32 interconectados via Wifi através do protocolo MQTT, podendo ser aplicada em diversos contextos de automação a exemplo das áreas de Automação Residencial, Predial ou Industrial. Controlando diversos sensores e leds.
@@ -25,3 +28,6 @@ platformio run --target upload --target monitor --environment esp32doit-devkit-v
 ```
 
 3. A dashboard pode ser visualizada em: [WictorGirardi-Dashboard.](http://164.41.98.25:443/dashboards/5df55820-3a2e-11ed-be92-e3a443145aec)
+
+## Video 
+Link Youtube: https://youtu.be/-LS3NSm02PY

@@ -113,8 +113,7 @@ void mqtt_handle_data(esp_mqtt_event_handle_t event)
     if (strcmp(method, "setValue") == 0)
     {
 
-        cJSON_Delete(msg);
-
+        cJSON_Delete(msg);  
         char requestId[10] = {0};
         strncpy(requestId, event->topic + (strlen(SERVER_RPC) - 1), event->topic_len - (strlen(SERVER_RPC) - 1));
         requestId[event->topic_len - (strlen(SERVER_RPC) - 1)] = '\0';

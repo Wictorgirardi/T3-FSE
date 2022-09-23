@@ -51,7 +51,7 @@ void taskReadDht11(void *key)
 
                 if (dht11_data.humidity != 0)
                     mqtt_publish_dht("v1/devices/me/telemetry", (char *)key, dht11_data.humidity);
-                ESP_LOGI(TAG, "humidade: %d", dht11_data.humidity);
+                ESP_LOGI(TAG, "umidade: %d", dht11_data.humidity);
             }
         }
     }

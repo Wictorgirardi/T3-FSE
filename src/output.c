@@ -25,7 +25,7 @@ void led_loop()
 
             printf("intensity ===== %d", intensity);
             ESP_LOGI(TAG, "Pin dimmable %d is %d", LED_PIN, intensity);
-            ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, intensity * 255 / 100);
+             _set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, intensity * 255 / 100);
             ledc_update_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0);
         }
         vTaskDelay(1000 / portTICK_PERIOD_MS);
